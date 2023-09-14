@@ -1,6 +1,6 @@
-# Sample Project
+# High spatio-temporal mapping of snowcover
 
-This is as an example on how teams can structure their project repositories and format their project README.md file. Thanks to Lindsey Heagey and Joachim Meyer for the template!
+Mapping of snowcover at high spatio-temporal resolution
 
 ## Files
 
