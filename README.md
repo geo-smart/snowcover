@@ -12,29 +12,6 @@ Mapping snow cover is crucial for a multitude of reasons, including its role in 
 
 5. **Validation and Calibration:** HLS data is well-calibrated and validated, ensuring the reliability and accuracy of the information used for snow cover mapping. 
 
-## Files
-
-* `.gitignore`
-<br> Globally ignored files by `git` for the project.
-* `environment.yml`
-<br> `conda` environment description needed to run this project.
-* `README.md`
-<br> Description of the project 
-
-## Folders
-
-Below are the three folders where runnable code snd other artifacts can be found. 
-
-### `contributors`
-Each team member can create their own folder under contributors, within which they can work on their own scripts, notebooks, and other files. Having a dedicated folder for each person helps to prevent conflicts when merging with the main branch. This is a good place for team members to start off exploring data and methods for the project.
-
-### `notebooks`
-Notebooks that are considered delivered results for the project should go in here.
-
-### `scripts`
-Helper utilities that are shared with the team should go in here.
-
-
 ## Project Summary
 
 HLS data is a valuable resource for mapping snow cover due to its spectral bands, temporal resolution, data fusion capabilities, cloud cover reduction, historical archives, and ease of use. It enables accurate and timely monitoring of snow cover, which is essential for various applications. We will be mapping snow cover using deep learning depends by creating training data, reusing model architecture, doing hyperparameter tuning, and subsequent evaluation. 
@@ -134,3 +111,26 @@ Mapping snow cover using deep learning techniques like U-Net involves several ta
   * HLS (assigned to team member B)
 * Prepare tiles
 * Train
+
+## Files
+
+* `.gitignore`
+<br> Globally ignored files by `git` for the project.
+* `environment.yml`
+<br> `conda` environment description needed to run this project.
+* `README.md`
+<br> Description of the project 
+
+## Folders
+
+Below are the three folders where runnable code snd other artifacts can be found. 
+
+### `contributors`
+Each team member can create their own folder under contributors, within which they can work on their own scripts, notebooks, and other files. Having a dedicated folder for each person helps to prevent conflicts when merging with the main branch. This is a good place for team members to start off exploring data and methods for the project.
+
+### `notebooks`
+Notebooks that are considered delivered results for the project should go in here.
+
+### `scripts`
+Helper utilities that are shared with the team should go in here.
+
