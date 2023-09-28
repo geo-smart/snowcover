@@ -1,6 +1,6 @@
 # High spatio-temporal mapping of snowcover
 
-Mapping snow cover is crucial for a multitude of reasons, including its role in climate research, water resource management, flood forecasting, agricultural planning, energy generation, transportation, infrastructure maintenance, and recreation. In this project we will be using HLS (Harmonized Landsat Sentinel) data to map snowcover. Using HLS data to map snow cover can be an effective and valuable approach. HLS data combines observations from the Landsat and Sentinel satellite systems, providing high-quality and frequently updated imagery of the Earth's surface. Combining data from both Landsat and Sentinel satellites in the HLS dataset provides the advantages of both systems. Landsat offers high spatial resolution, while Sentinel provides more frequent revisits. This fusion enhances the accuracy and timeliness of snow cover mapping. Here's how HLS we will use it for snow cover mapping:
+Mapping snow cover is crucial for a multitude of reasons, including its role in climate research, water resource management, flood forecasting, agricultural planning, energy generation, transportation, infrastructure maintenance, and recreation. In this project we will be using HLS (Harmonized Landsat Sentinel) data to map snowcover. Using HLS data to map snow cover can be an effective and valuable approach. HLS data combines observations from the Landsat and Sentinel satellite systems, providing high-quality and frequently updated imagery of the Earth's surface. Combining data from both Landsat and Sentinel satellites in the HLS dataset is advantageous as Landsat offers high spatial resolution, while Sentinel provides more frequent revisits. Here's how we will use HLS in deep learning project for snow cover mapping:
 
 1. **Multi-Spectral Bands:** HLS data includes various spectral bands that are sensitive to different surface properties. These bands can be utilized to distinguish between snow-covered and snow-free areas. The reflectance in the visible and near-infrared bands can help identify snow due to its high reflectivity in these regions. We will use a subset of bands.
 
@@ -10,8 +10,7 @@ Mapping snow cover is crucial for a multitude of reasons, including its role in 
 
 4. **Historical Analysis:** HLS data archives allow us to conduct historical analyses of snow cover changes over extended periods, aiding in climate research and trend detection related to snow cover. We can do this as part of a take home exercise. 
 
-5. **Validation and Calibration:** HLS data is well-calibrated and validated, ensuring the reliability and accuracy of the information used for snow cover mapping. We
-
+5. **Validation and Calibration:** HLS data is well-calibrated and validated, ensuring the reliability and accuracy of the information used for snow cover mapping. 
 
 ## Files
 
@@ -20,7 +19,7 @@ Mapping snow cover is crucial for a multitude of reasons, including its role in 
 * `environment.yml`
 <br> `conda` environment description needed to run this project.
 * `README.md`
-<br> Description of the project (see suggested headings below)
+<br> Description of the project 
 
 ## Folders
 
@@ -35,7 +34,6 @@ Notebooks that are considered delivered results for the project should go in her
 ### `scripts`
 Helper utilities that are shared with the team should go in here.
 
-# Recommended content for your README.md file:
 
 ## Project Summary
 
@@ -54,11 +52,11 @@ Aji John
 * Team member
 * Team member
 
-### The problem
+### Why do this project ?
 
 Mapping in high-altitude forested areas poses several challenges. The dense vegetation canopy can hinder data acquisition from satellite or aerial imagery, making it challenging to obtain accurate terrain and land cover information. Additionally, the rugged terrain and steep slopes common in high-altitude forests can complicate ground-based data collection efforts, and the risk of forest fires may limit access. Specialized remote sensing techniques, such as LiDAR and radar, are often employed to penetrate the canopy and provide detailed elevation and land cover data, but these methods can be resource-intensive. Effective mapping in high-altitude forested areas using high resolution satellite imagery like HLS is promising because of its spectral bands, temporal resolution, data fusion capabilities, cloud cover reduction, historical archives, and ease of use.
 
-### Specific questions / project goals
+### Project goals
 
 Our specific goals for mapping snow cover using HLS data:
 
@@ -75,7 +73,7 @@ Our specific goals for mapping snow cover using HLS data:
 
 We will use HLS aand ASO data. 
 
-The HLS (Harmonized Landsat Sentinel) dataset is a valuable resource for Earth observation and remote sensing applications. It combines data from the Landsat and Sentinel satellite systems, providing multispectral and high-resolution imagery of the Earth's surface. HLS data offers frequent revisits to the same areas, enabling monitoring of changes over time. It includes various spectral bands, such as red, green, blue, near-infrared, and shortwave infrared, making it suitable for land cover classification, vegetation monitoring, and environmental assessments. HLS data also includes cloud mask information, aiding in the filtering of cloudy or obscured regions. It is widely used for tasks like land cover mapping, vegetation analysis, and land-use change detection, contributing to a better understanding of our planet's dynamic landscapes.
+The HLS (Harmonized Landsat Sentinel) dataset is a valuable resource for Earth observation and remote sensing applications. It combines data from the Landsat and Sentinel satellite systems, providing multispectral and high-resolution imagery of the Earth's surface. HLS data offers frequent revisits to the same areas, enabling monitoring of changes over time. It includes various spectral bands, such as red, green, blue, near-infrared, and shortwave infrared, making it suitable for land cover classification, vegetation monitoring, and environmental assessments. HLS data also includes cloud mask information, aiding in the filtering of cloudy or obscured regions. It is widely used for tasks like land cover mapping, vegetation analysis, and land-use change detection.
 
 ASO (Airborne Snow Observatory) data is a specialized dataset collected through aerial remote sensing missions. It provides detailed information about snowpack properties and characteristics in mountainous regions. ASO data is acquired using advanced LiDAR (Light Detection and Ranging) and imaging spectrometer technology, allowing for precise measurements of snow depth, snow water equivalent (SWE), snow albedo, and other snow-related parameters. These data are valuable for various applications, including water resource management, snowmelt forecasting, and climate research, as they offer high-resolution, accurate, and up-to-date information about snow cover dynamics in critical snow-dependent areas.
 
@@ -93,7 +91,7 @@ Optional: links to manuscripts or technical documents providing background infor
 
 ### Outline of Tasks
 
-Mapping snow cover using deep learning techniques like U-Net involves several tasks and steps. Our initial list of tasks is below:
+Mapping snow cover using deep learning techniques like U-Net involves several tasks and steps. Our initial list of tasks is below (subject to change !):
 
 1. **Data Collection and Preparation:**
    - Acquire satellite imagery, preferably multispectral or hyperspectral data that includes bands sensitive to snow properties.
