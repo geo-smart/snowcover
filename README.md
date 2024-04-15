@@ -1,6 +1,6 @@
 # Snowcover using Planet
 
-Mapping snow cover with Planet imagery aids in environmental monitoring, disaster response, and resource management, fostering scientific research and community engagement while enabling personal growth through impactful contributions to understanding climate patterns and changes.
+Mapping snow cover with Planet imagery aids in environmental monitoring, disaster response, and resource management, fostering scientific research and community engagement while enabling personal growth through impactful contributions to understanding climate patterns and changes.  While this is not exhaustive, we hope this repository gives the foundation to start exploring remote sensed datsets to map snowcover. 
 
 Possible Research Questions:
 1. How does the accuracy of the deep learning model compare to traditional methods for mapping snow cover?
@@ -18,7 +18,7 @@ Possible Research Questions:
 * `environment.yml`
 <br> `conda` environment description needed to run this project.
 * `README.md`
-<br> Description of the project (see suggested headings below)
+<br> Description of the project
 
 ## Folders
 
@@ -32,8 +32,6 @@ Notebooks here take you through individual notebooks that are steps to make it r
 
 ### `scripts`
 Helper utilities that are shared with the team should go in here.
-
-# Recommended content for your README.md file:
 
 ## Project Summary
 
