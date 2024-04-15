@@ -69,7 +69,7 @@ Planet imagery and corresponding snow cover labels.
 
 1. **Planet Imagery**:
    - Size: Variable, depending on the coverage area and resolution of the satellite imagery. Can range from small patches to large-scale coverage of entire regions.
-   - Format: Typically GeoTIFF or similar raster formats, containing multispectral or RGB bands captured by Planet's satellites (e.g., PlanetScope, SkySat).
+   - Format: Typically GeoTIFF or similar raster formats, containing multispectral or RGB bands captured by Planet's satellites (e.g., PlanetScope here).
    - Access: Accessible via the Planet API, which provides a programmatic interface for searching, retrieving, and downloading imagery based on various parameters such as location, date, cloud cover, and satellite constellation.
 
 2. **Snow Cover Labels**:
@@ -85,11 +85,23 @@ Both the Planet imagery and snow cover labels are typically stored as raster dat
 
 ### Existing methods
 
-How would you or others traditionally try to address this problem?
+Handful that we know, common methods include:
+
+1. **Spectral Indices**: Spectral indices such as the Normalized Difference Snow Index (NDSI) or the Modified Normalized Difference Snow Index (MNDSI) leverage the unique spectral characteristics of snow in satellite imagery to differentiate between snow-covered and snow-free areas.
+
+2. **Machine Learning Classifiers**: Supervised machine learning algorithms, including decision trees, random forests, and support vector machines, have been widely used to classify satellite imagery into snow and non-snow classes based on handcrafted features extracted from the imagery.
+
+3. **Thresholding**: Simple thresholding techniques involve setting a fixed threshold on spectral bands or indices to classify pixels as snow-covered or snow-free based on their reflectance values.
+
+4. **Manual Interpretation**: In some cases, snow cover mapping may involve manual interpretation of satellite imagery by experts to identify and delineate snow-covered areas based on visual inspection.
+
+5. **Data Fusion**: Data fusion techniques combine information from multiple sources, including satellite imagery, ground observations, and meteorological data, to improve the accuracy and reliability of snow cover mapping.
+
+These traditional methods often require domain-specific knowledge for feature selection and parameter tuning and may struggle to accurately capture the complex spatial and temporal dynamics of snow cover. But, they may lack scalability and efficiency when applied to large-scale mapping tasks.
 
 ### Proposed methods/tools
 
-Our method uses UNet architecture, a type of convolutional neural network specifically designed for semantic segmentation tasks, to accurately map snow cover using Planet imagery. Initially, the Planet imagery and corresponding snow cover labels undergo preprocessing to prepare them for model training. The UNet architecture, characterized by its symmetric contracting and expansive paths, is trained using the labeled imagery data. This architecture allows the model to capture intricate spatial dependencies and effectively segment the imagery into snow-covered and snow-free regions.
+Our approach here uses UNet architecture, a type of convolutional neural network specifically designed for semantic segmentation tasks, to accurately map snow cover using Planet imagery. Initially, the Planet imagery and corresponding snow cover labels undergo preprocessing to prepare them for model training. The UNet architecture, characterized by its symmetric contracting and expansive paths, is trained using the labeled imagery data. This architecture allows the model to capture intricate spatial dependencies and effectively segment the imagery into snow-covered and snow-free regions.
 
 Once trained, the model could be evaluated for its performance in mapping snow cover across various geographic regions and time periods. We assess both the accuracy of the model's pixel-wise predictions and its computational efficiency, considering its scalability for large-scale snow cover mapping tasks. Overall, our code repository here aims to provide a robust and efficient solution for monitoring snow cover dynamics.
 
@@ -109,7 +121,9 @@ Optional: links to manuscripts or technical documents providing background infor
 
 ## Running
 
+```
 conda env create -f environment.yml
 conda activate snow_mapping_env
+```
 
 You might need to do 'conda init'
