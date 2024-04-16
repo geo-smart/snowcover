@@ -1,0 +1,17 @@
+name: snow_mapping_env
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8
+  - jupyterlab
+  - numpy
+  - rasterio
+  - torchvision
+  - pytorch
+  - pillow
+  - scikit-learn
+  - rasterio
+  - shapely
+  - planet
