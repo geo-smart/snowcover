@@ -12,3 +12,6 @@ dependencies:
   - pytorch
   - pillow
   - scikit-learn
+  - rasterio
+  - shapely
+  - planet
