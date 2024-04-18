@@ -1,6 +1,19 @@
-### Project Title
+## Project Title
 
 Mapping Snow Cover Using UNet-Based Deep Learning Architecture (SnowCoverNet)
+
+# Snowcover using Planet
+
+Mapping snow cover with Planet imagery aids in environmental monitoring, disaster response, and resource management, fostering scientific research and community engagement while enabling personal growth through impactful contributions to understanding climate patterns and changes.  While this is not exhaustive, we hope this repository gives the foundation to start exploring remote sensed datsets to map snowcover. 
+
+Possible Research Questions:
+1. How does the accuracy of the deep learning model compare to traditional methods for mapping snow cover?
+2. What are the key factors influencing the performance of the deep learning algorithm in snow cover classification?
+3. How well does the algorithm generalize to different environmental conditions and geographic regions?
+4. What are the computational requirements and scalability challenges associated with large-scale snow cover mapping?
+5. What are the potential applications and benefits of integrating deep learning-based snow cover mapping into existing monitoring systems or workflows?
+6. How can uncertainties in the model predictions be effectively quantified and communicated to stakeholders?
+7. What are the practical considerations and challenges in operationalizing the algorithm for real-world snow cover monitoring applications?
 
 ### Collaborators
 
@@ -88,3 +101,10 @@ conda activate snow_mapping_env
 ```
 
 You might need to do 'conda init'
+
+## Kernel if Jupyter is used
+
+```
+conda install ipykernel
+python -m ipykernel install --user --name snow_mapping_env
+```
